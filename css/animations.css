@@ -1,0 +1,97 @@
+/*KEYFRAMES*/
+
+@keyframes fadeUp {
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero__title{
+    animation: fadeLeft .8s ease forwards;
+}
+
+.hero__subtitle{
+    opacity:0;
+    animation: fadeLeft .8s ease .3s forwards;
+}
+
+.hero__buttons{
+    opacity:0;
+    animation: fadeUp .8s ease .6s forwards;
+}
+
+.navbar{
+    animation: fadeUp .7s ease;
+}
+
+/* BUTTONS*/
+
+.btn{
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 34px;
+
+    border-radius: 50px;
+
+    font-family: var(--text-font);
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    cursor: pointer;
+
+}
+
+.btn--primary{
+
+    background: var(--accent-color);
+
+    color: white;
+
+}
+
+.btn--primary:hover{
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,.30);
+
+}
+
+.btn--secondary{
+
+    border: 2px solid white;
+
+    color: white;
+
+}
+
+.btn--secondary:hover{
+
+    background: white;
+
+    color: #222;
+
+    transform: translateY(-4px);
+
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pérgolas y Techos Eduardo's</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Libreria del carrousel-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/carousel.js"></script>
+    <script defer src="js/animations.js"></script>
+
+</head>
+
+<body>
+
+    <header class="hero" id="inicio">
+
+        <div class="hero__overlay"></div>
+        <nav class="navbar">
+            <div class="container navbar__container">
+
+                <!-- Logo -->
+                <a href="#inicio" class="navbar__logo">
+                    <img src="assets/logos/logo.png" alt="Pérgolas y Techos Eduardo's">
+                </a>
+
+                <!-- Menú -->
+                <ul class="navbar__menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+
+                <!-- Menú móvil -->
+                <button class="navbar__toggle" aria-label="Abrir menú">
+                    ☰
+                </button>
+
+            </div>
+
+        </nav>
+        <!-- Contenido principal -->
+        <div class="hero__content container">
+            <h1 class="hero__title">
+                Pérgolas y Techos
+                <span>Eduardo's</span>
+            </h1>
+
+            <p class="hero__subtitle">
+                Transformamos espacios con pérgolas, techos y herrería a medida.
+            </p>
+
+            <div class="hero__buttons">
+                <a href="#contacto" class="btn btn--primary">
+                    Solicitar cotización
+                </a>
+                <a href="#proyectos" class="btn btn--secondary">
+                    Ver proyectos
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="projects" id="proyectos">
+
+            <div class="container">
+
+                <p class="section__subtitle">
+                    Algunos de nuestros trabajos
+                </p>
+
+                <h2 class="section__title">
+                    Proyectos Destacados
+                </h2>
+
+                <!-- Swiper -->
+                <div class="swiper projectsSwiper">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-01.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-02.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-03.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-04.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-05.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-06.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-07.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-08.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-09.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/images/projects/proyecto-10.png" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-button-prev"></div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+        SERVICIOS
+========================= -->
+
+        <section class="services" id="servicios">
+
+            <div class="container">
+
+                <p class="section__subtitle">
+                    Lo que hacemos
+                </p>
+
+                <h2 class="section__title">
+                    Nuestras Especialidades.
+                </h2>
+
+                <p class="section__description">
+                    Diseñamos y fabricamos soluciones metálicas modernas,
+                    resistentes y totalmente a la medida de cada proyecto.
+                </p>
+
+                <div class="services__grid">
+
+                    <!-- AQUÍ VA LA TARJETA -->
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="building-2"></i>
+                        </div>
+
+                        <h3>Pérgolas</h3>
+
+                        <p>
+                            Diseñamos y fabricamos pérgolas de acero, cristal y policarbonato, adaptadas completamente a
+                            cada espacio.
+                        </p>
+
+                        <a href="#contacto">
+                            Solicitar Cotización
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="house"></i>
+                        </div>
+
+                        <h3>Techos</h3>
+
+                        <p>
+                            Instalamos techos metálicos, de cristal y policarbonato con acabados de alta calidad para
+                            espacios residenciales y comerciales.
+                        </p>
+
+                        <a href="#contacto">
+                            Cotizar Poryecto
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <i data-lucide="wrench"></i>
+                        </div>
+
+                        <h3>Herrería General</h3>
+
+                        <p>
+                            Fabricamos puertas, barandales, estructuras metálicas y proyectos personalizados con
+                            materiales resistentes y de excelente calidad.
+                        </p>
+
+                        <a href="#contacto">
+                            Cotizar Poryecto
+                            <span>→</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+        ¿POR QUÉ ELEGIRNOS?
+========================= -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <p class="section__subtitle">
+                    Nuestro compromiso
+                </p>
+
+                <h2 class="section__title">
+                    ¿Por qué elegirnos?
+                </h2>
+
+                <p class="section__description">
+                    Cada proyecto es desarrollado con materiales de calidad,
+                    atención al detalle y soluciones adaptadas a las necesidades
+                    de cada cliente.
+                </p>
+
+                <div class="features__grid">
+
+                    <!-- Item 1 -->
+
+                    <div class="feature">
+
+                        <i data-lucide="badge-check"></i>
+
+                        <h3>Calidad</h3>
+
+                        <p>
+                            Materiales resistentes y acabados de alta calidad.
+                        </p>
+
+                    </div>
+
+                    <!-- Item 2 -->
+
+                    <div class="feature">
+
+                        <i data-lucide="ruler"></i>
+
+                        <h3>A la medida</h3>
+
+                        <p>
+                            Cada proyecto se adapta completamente a tu espacio.
+                        </p>
+
+                    </div>
+
+                    <!-- Item 3 -->
+
+                    <div class="feature">
+
+                        <i data-lucide="clock-3"></i>
+
+                        <h3>Puntualidad</h3>
+
+                        <p>
+                            Cumplimos con los tiempos acordados de entrega.
+                        </p>
+
+                    </div>
+
+                    <!-- Item 4 -->
+
+                    <div class="feature">
+
+                        <i data-lucide="handshake"></i>
+
+                        <h3>Compromiso</h3>
+
+                        <p>
+                            Te acompañamos desde la cotización hasta la instalación.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+        CONTACTO
+========================= -->
+
+        <section class="contact" id="contacto">
+
+            <div class="container">
+
+                <p class="section__subtitle">
+                    Contáctanos
+                </p>
+
+                <h2 class="section__title">
+                    ¿Listo para tu proyecto?
+                </h2>
+
+                <p class="section__description">
+
+                    Transformemos tu idea en una estructura metálica
+                    moderna, resistente y completamente a la medida.
+
+                </p>
+
+                <a href="https://wa.me/5530815030" target="_blank" class="contact__button">
+
+                    <i data-lucide="message-circle"></i>
+
+                    <span>Solicitar cotización</span>
+
+                </a>
+
+                <p class="contact__trust">
+
+                    ⚡ Respondemos normalmente el mismo día.
+
+                </p>
+
+                <div class="contact__grid">
+
+                    <div class="contact__item">
+
+                        <div class="contact__title">
+
+                            <i data-lucide="phone"></i>
+
+                            <h3>Teléfono</h3>
+
+                        </div>
+
+                        <span>55 XXX XXXX</span>
+
+                    </div>
+
+                    <div class="contact__item">
+
+                        <div class="contact__title">
+
+                            <i data-lucide="map-pin"></i>
+
+                            <h3>Zona de servicio</h3>
+
+                        </div>
+
+                        <span>Estado de México y CDMX</span>
+
+                    </div>
+
+                    <div class="contact__item">
+
+                        <div>
+
+                            <i data-lucide="facebook"></i>
+
+                            <h3>Facebook</h3>
+
+                        </div>
+
+                        <span>Pérgolas y Techos Eduardo's</span>
+
+                    </div>
+
+                    <div class="contact__item">
+
+                        <div>
+
+                            <i data-lucide="clock-3"></i>
+
+                            <h3>Horario</h3>
+
+                        </div>
+
+                        <span>Lunes a Sábado</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <!-- =========================
+            FOOTER
+    ========================== -->
+    <footer>
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <img src="assets/logos/logo.png" alt="Pérgolas y Techos Eduardo's" class="footer__logo">
+
+                <h3>
+
+                    Pérgolas y Techos Eduardo's
+
+                </h3>
+
+                <p class="footer__description">
+
+                    Fabricamos pérgolas, techos y estructuras metálicas
+                    totalmente a la medida con materiales de alta calidad.
+
+                </p>
+
+                <nav class="footer__menu">
+
+                    <a href="#inicio">Inicio</a>
+
+                    <a href="#servicios">Servicios</a>
+
+                    <a href="#proyectos">Proyectos</a>
+
+                    <a href="#contacto">Contacto</a>
+
+                </nav>
+
+                <div class="footer__line"></div>
+
+                <p class="footer__copy">
+
+                    © 2026 Pérgolas y Techos Eduardo's.
+                    Todos los derechos reservados.
+
+                </p>
+
+            </div>
+
+        </footer>
+
+
+    </footer>
+
+</body>
+
+</html>
