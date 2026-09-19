@@ -17,10 +17,8 @@ body {
     overflow-x: hidden;
 
     background:
-        linear-gradient(
-            rgba(26,26,26,.78),
-            rgba(26,26,26,.78)
-        ),
+        linear-gradient(rgba(26, 26, 26, .78),
+            rgba(26, 26, 26, .78)),
         url("../assets/images/pattern.png");
 
     background-size: 650px;
@@ -273,14 +271,14 @@ ul {
         PROJECTS
 =============================*/
 
-.services{
+.services {
 
     background:
         url("../assets/images/pattern.png");
 
-    background-size:650px;
+    background-size: 650px;
 
-    background-repeat:repeat;
+    background-repeat: repeat;
 
 }
 
@@ -367,6 +365,350 @@ ul {
 .swiper-button-prev {
     left: 25px;
 }
+
+
+
+
+/* =========================
+GALERÍA COMPLETA
+========================= */
+
+.gallery-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .82);
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .35s ease;
+
+    z-index: 9999;
+
+}
+
+.gallery-modal.active {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
+.gallery-modal__content {
+
+    width: min(92%, 1200px);
+
+    max-height: 88vh;
+
+    background: #1A1A1A;
+
+    border-radius: 24px;
+
+    padding: 45px;
+
+    overflow-y: auto;
+
+    position: relative;
+
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+
+    transform: translateY(40px) scale(.96);
+
+    transition: .35s ease;
+
+}
+
+.gallery-modal.active .gallery-modal__content {
+
+    transform: translateY(0) scale(1);
+
+}
+
+.gallery-modal__close {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #262626;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 1.2rem;
+
+    transition: .3s;
+
+}
+
+.gallery-modal__close:hover {
+
+    background: var(--accent-color);
+
+    color: #111;
+
+    transform: rotate(90deg);
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+
+    margin-top:50px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.gallery__footer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    margin-top:45px;
+
+}
+
+.gallery__text{
+
+    color:#C8C8C8;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+.gallery__button{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:18px 34px;
+
+    border-radius:999px;
+
+    background:var(--accent-color);
+
+    color:#111;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+.gallery__button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 35px rgba(212,175,55,.35);
+
+}
+
+.gallery-grid img{
+
+    transition:.35s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/*=========================
+LIGHTBOX
+=========================*/
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:10000;
+
+}
+
+.lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.lightbox img{
+
+    max-width:90%;
+
+    max-height:85vh;
+
+    border-radius:12px;
+
+    object-fit:contain;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.45);
+
+    animation:zoomIn .3s ease;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+.lightbox button{
+
+    position:absolute;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:1.8rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.lightbox button:hover{
+
+    background:var(--accent-color);
+
+    color:#111;
+
+}
+
+.lightbox__close{
+
+    top:35px;
+
+    right:35px;
+
+}
+
+.lightbox__prev{
+
+    left:40px;
+
+}
+
+.lightbox__next{
+
+    right:40px;
+
+}
+
 
 /*============================
         SERVICES
@@ -497,7 +839,7 @@ ul {
 
 .features {
     background: #1a1a1a00;
-    padding: 120px 0;
+    padding: 40px 0;
 }
 
 .features__grid {
@@ -621,6 +963,20 @@ ul {
 
 }
 
+.contact__buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 45px;
+
+}
+
 .contact__button {
 
     display: inline-flex;
@@ -628,10 +984,10 @@ ul {
     justify-content: center;
     gap: 12px;
 
-    width: 340px;
-    max-width: 100%;
+    width: 260px;
 
-    margin: 45px auto 0;
+    margin: 0;
+    max-width: 100%;
 
     padding: 20px 30px;
 
@@ -653,20 +1009,52 @@ ul {
 
 }
 
+.contact__button--whatsapp {
+
+    background: #25D366;
+
+    box-shadow: 0 15px 35px rgba(37, 211, 102, .28);
+
+}
+
+.contact__button--whatsapp:hover {
+
+    background: #20ba5a;
+
+}
+
+.contact__button--facebook {
+
+    background: #1877F2;
+
+    box-shadow: 0 15px 35px rgba(24, 119, 242, .28);
+
+}
+
+.contact__button--facebook:hover {
+
+    background: #1668d1;
+
+}
+
 .contact__button:hover {
 
     transform: translateY(-6px);
 
-    background: #20ba5a;
+}
 
-    box-shadow: 0 20px 45px rgba(37, 211, 102, .40);
+.contact__button i {
+
+    font-size: 1.5rem;
+
+    transition: .3s;
 
 }
 
-.contact__button svg {
+.contact__button:hover i {
 
-    width: 24px;
-    height: 24px;
+    transform: scale(1.15) rotate(-10deg);
+
 }
 
 .contact__phrase {

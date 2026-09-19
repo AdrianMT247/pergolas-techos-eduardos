@@ -17,6 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+
     <!-- Libreria del carrousel-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -154,6 +156,22 @@
                     <div class="swiper-button-prev"></div>
 
                     <div class="swiper-pagination"></div>
+
+                </div>
+
+                <div class="gallery__footer">
+
+                    <p class="gallery__text">
+                        Esto es solo una pequeña muestra de nuestros trabajos.
+                    </p>
+
+                    <button class="gallery__button" id="openGallery">
+
+                        <i class="ri-image-line"></i>
+
+                        Explorar galería completa
+
+                    </button>
 
                 </div>
 
@@ -356,13 +374,25 @@
 
                 </p>
 
-                <a href="https://wa.me/5530815030" target="_blank" class="contact__button">
+                <div class="contact__buttons">
 
-                    <i data-lucide="message-circle"></i>
+                    <a href="https://wa.me/5530815030" target="_blank"
+                        class="contact__button contact__button--whatsapp">
 
-                    <span>Solicitar cotización</span>
+                        <i class="ri-whatsapp-fill"></i>
+                        Solicitar Cotización
 
-                </a>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1GBTGrHdSt/" target="_blank"
+                        class="contact__button contact__button--facebook">
+
+                        <i class="ri-facebook-circle-fill"></i>
+                        Ver nuestros proyectos
+
+                    </a>
+
+                </div>
 
                 <p class="contact__trust">
 
@@ -382,7 +412,7 @@
 
                         </div>
 
-                        <span>55 XXX XXXX</span>
+                        <span>55 30815030</span>
 
                     </div>
 
@@ -424,7 +454,7 @@
 
                         </div>
 
-                        <span>Lunes a Sábado</span>
+                        <span>Lunes a Domingo 24 horas</span>
 
                     </div>
 
@@ -435,6 +465,80 @@
         </section>
 
     </main>
+
+    <div class="gallery-modal" id="galleryModal">
+
+        <div class="gallery-modal__content">
+
+            <button class="gallery-modal__close" id="closeGallery">
+
+                <i class="ri-close-large-line"></i>
+
+            </button>
+
+            <p class="section__subtitle">
+                Nuestro trabajo
+            </p>
+
+            <h2 class="section__title">
+                Explora todos nuestros proyectos
+            </h2>
+
+            <div class="gallery-grid">
+
+                <img src="assets/images/projects/proyecto-01.png" alt="">
+                <img src="assets/images/projects/proyecto-02.png" alt="">
+                <img src="assets/images/projects/proyecto-03.png" alt="">
+                <img src="assets/images/projects/proyecto-04.png" alt="">
+                <img src="assets/images/projects/proyecto-05.png" alt="">
+                <img src="assets/images/projects/proyecto-06.png" alt="">
+                <img src="assets/images/projects/proyecto-07.png" alt="">
+                <img src="assets/images/projects/proyecto-08.png" alt="">
+                <img src="assets/images/projects/proyecto-09.png" alt="">
+                <img src="assets/images/projects/proyecto-10.png" alt="">
+                <img src="assets/images/projects/proyecto-11.png" alt="">
+                <img src="assets/images/projects/proyecto-12.png" alt="">
+                <img src="assets/images/projects/proyecto-13.png" alt="">
+                <img src="assets/images/projects/proyecto-14.png" alt="">
+                <img src="assets/images/projects/proyecto-15.png" alt="">
+                <img src="assets/images/projects/proyecto-16.png" alt="">
+                <img src="assets/images/projects/proyecto-17.png" alt="">
+                <img src="assets/images/projects/proyecto-18.png" alt="">
+                <img src="assets/images/projects/proyecto-19.png" alt="">
+                <img src="assets/images/projects/proyecto-20.png" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+        VISOR DE IMÁGENES
+========================= -->
+
+    <div class="lightbox" id="lightbox">
+
+        <button class="lightbox__close" id="closeLightbox">
+            <i class="ri-close-large-line"></i>
+        </button>
+
+        <button class="lightbox__prev" id="prevImage">
+            <i class="ri-arrow-left-s-line"></i>
+        </button>
+
+        <img id="lightboxImage" src="" alt="">
+
+        <button class="lightbox__next" id="nextImage">
+            <i class="ri-arrow-right-s-line"></i>
+        </button>
+
+    </div>
+
+
+
+
     <!-- =========================
             FOOTER
     ========================== -->
